@@ -56,3 +56,10 @@ if (vialCount(test1) == 1) {
 else {
     console.log('XXXXXX Failed second vialCount test');
 }
+
+if (vialCount(test2) == 5) {
+    console.log('third test passed');
+}
+else {
+    console.log('XXXXXX Failed third vialCount test');
+}
