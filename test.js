@@ -28,7 +28,7 @@ if (nodeFunction(16) == 10) {
     XXXXXXXXXXX`);
 }
 
-if (nodeFunction(8) == 6) {
+if (nodeFunction(3) == 4) {
     console.log('Passed nodeFunction test 2!');
 } else {
     console.log(`

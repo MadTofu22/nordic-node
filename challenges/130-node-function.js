@@ -10,15 +10,18 @@
 
 module.exports = function (numberOfBoxes) {
     // YOUR CODE HERE
-
+    return Math.round((numberOfBoxes / 2) + 2);
 }
 
 // now run `node test.js` in the terminal, to see what happens
+// all if/else checks in test.js now pass 
 
 // After these are complete, you should be able to run `node test.js` and see `Passed!` for each of the tests.
+// correct
 
 // Take a look at `test.js` and think about what is happening here.
 // What do the first few lines do? How do `module.exports` and `require` relate to each other?
+// module.exports declares what require will get from this file.
 
 // STRETCH: You may not have half of a dog
 // If 3.5 dogs are required, the response should be 4
