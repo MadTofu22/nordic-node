@@ -41,4 +41,18 @@ if (nodeFunction(3) == 4) {
 
 let test0 = []; //vialCount = 0
 let test1 = ['vial', 'sandwich', 'dog food']; //vialCount = 1
-let test2 = [['vial', ['dog food', 'dog food'], 'taco'], 'vial', ['vial', vial, ['vial']]]; //vialCount = 5
+let test2 = [['vial', ['dog food', 'dog food'], 'taco'], 'vial', ['vial', 'vial', ['vial']]]; //vialCount = 5
+
+if (vialCount(test0) == 0) {
+    console.log('first test passed');
+}
+else {
+    console.log('XXXXXX Failed first vialCount test');
+}
+
+if (vialCount(test1) == 1) {
+    console.log('second test passed');
+}
+else {
+    console.log('XXXXXX Failed second vialCount test');
+}

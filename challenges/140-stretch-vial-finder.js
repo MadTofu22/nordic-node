@@ -34,13 +34,17 @@ function getVialCount (box) {
     let boxVialCount = 0;
     
     //loop through the box and check if it's a single vial item, or an array
-    for (let i=0; i <= box.length; i++) {
+    for (let i=0; i < box.length; i++) {
         //increase the count if a vial is found
         if (box[i] === 'vial'){
             boxVialCount++;
         }
         //recurse the function if the current item is another box
+        else if (typeof(box[i]) === 'Array') {
+            boxVialCount += getVialCount(box[i]);
+        }
     }
+    return boxVialCount;
 }
 
 // Don't forget to write tests!
